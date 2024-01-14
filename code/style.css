@@ -75,10 +75,11 @@ nav ul {
 }
 
 .header-sponsors {
-  padding: 0px 227px;
+  padding: 41px 227px;
   display: flex;
   justify-content: space-evenly;
   gap: 60px;
+  margin-bottom: 100px;
 }
 /* header styles end  */
 
