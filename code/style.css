@@ -8,6 +8,8 @@
   --base-text: 1rem;
   --base-text-weight: 600;
   --base-text-color: #3a3a3a;
+  --card-title: 1.75rem;
+  --card-sub-title: 1.5rem;
 }
 
 .base-text-color {
@@ -42,8 +44,7 @@ nav ul li {
   justify-content: center;
   list-style: none;
 }
-
-nav ul a {
+.nav-menu-container ul a {
   text-decoration: none;
   font-size: var(--base-text);
   font-weight: var(--base-text-weight);
@@ -84,3 +85,46 @@ nav ul {
 /* header styles end  */
 
 /* main styles start  */
+.container-title {
+  font-size: var(--card-title);
+  font-weight: var(--base-text-weight);
+  color: var(--base-text-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.popular-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 196px;
+  gap: 30px;
+}
+
+.card {
+  padding: 17px 14px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-title {
+  color: #18191f;
+  font-size: var(--card-title);
+  font-weight: 500;
+  margin: 6px 0px;
+}
+
+.card-sub-title {
+  font-size: var(--card-sub-title);
+  font-weight: 400;
+  margin: 6px 0px;
+}
+.stars {
+  width: 122px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0px;
+}
