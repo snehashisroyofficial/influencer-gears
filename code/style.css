@@ -2,12 +2,15 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
   --base-text: 1rem;
   --base-text-weight: 600;
   --base-text-color: #3a3a3a;
+  --footer-color: #0a0826;
   --card-title: 1.75rem;
   --card-sub-title: 1.5rem;
 }
@@ -38,6 +41,7 @@ header {
 nav {
   display: flex;
   justify-content: space-around;
+  margin-top: 87px;
 }
 
 nav ul li {
@@ -62,16 +66,22 @@ nav ul {
   font-size: 3.25rem;
   font-weight: 700;
   width: 580px;
+  margin-bottom: 16px;
 }
 
 .header-description {
   width: 500px;
+  margin-bottom: 16px;
 }
 
 .header-container {
+  background-image: url("../images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-position: right;
   display: flex;
   justify-content: space-around;
-  margin-top: 80px;
+  align-items: center;
+  margin-top: 60px;
   margin-bottom: 100px;
 }
 
@@ -85,6 +95,7 @@ nav ul {
 /* header styles end  */
 
 /* main styles start  */
+
 .container-title {
   font-size: var(--card-title);
   font-weight: var(--base-text-weight);
@@ -114,6 +125,8 @@ nav ul {
   font-weight: 500;
   margin: 6px 0px;
 }
+main {
+}
 
 .card-sub-title {
   font-size: var(--card-sub-title);
@@ -127,4 +140,64 @@ nav ul {
   align-items: center;
   gap: 8px;
   margin: 0px;
+}
+/* 
+.buttom-text {
+  position: relative;
+  left: 100%;
+}
+ */
+
+/* featured section style  */
+
+.featured {
+  padding: 100px 165px;
+  display: flex;
+  align-items: center;
+  gap: 96px;
+}
+
+.featured-img {
+  width: 404px;
+  height: 270px;
+}
+
+.featured-title {
+  font-size: 2.3em;
+  font-weight: 700;
+  color: var(--footer-color);
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.featured-description {
+  font-size: var(--base-text);
+  font-weight: 700;
+  color: var(--base-text-color);
+  margin-bottom: 16px;
+}
+
+/* footer section style */
+
+footer {
+  background-color: var(--footer-color);
+}
+
+.footer-container {
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.footer-container h4 {
+  font-size: var(--card-sub-title);
+  color: #fff;
+}
+.footer-container p {
+  font-size: 0.87rem;
+  color: #d9dbe1;
+}
+
+.footer-img {
+  margin-top: 16px;
+  gap: 16px;
 }
